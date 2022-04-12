@@ -16,7 +16,17 @@ const somma = primaRichiesta + secondaRichiesta + terzaRichiesta + quartaRichies
 
 /* CICLO FOR */
 
-for(i = 0; i < somma; i++){
+/* for(i = 0; i < somma; i++){
 }
 
-document.getElementById("somma").append(i);
+document.getElementById("somma").append(i); */
+
+/* CICLO WHILE */
+
+let i = 0;
+
+while(somma > i){
+    i++
+}
+
+document.getElementById("somma").append(i)
