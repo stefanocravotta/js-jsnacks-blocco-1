@@ -10,5 +10,13 @@ const secondaRichiesta = parseInt(prompt("Inserisci un numero"));
 const terzaRichiesta = parseInt(prompt("Inserisci un numero"));
 const quartaRichiesta = parseInt(prompt("Inserisci un numero"));
 const quintaRichiesta = parseInt(prompt("Inserisci un numero"));
+const somma = primaRichiesta + secondaRichiesta + terzaRichiesta + quartaRichiesta + quintaRichiesta;
 
-document.getElementById("somma").append (primaRichiesta + secondaRichiesta + terzaRichiesta + quartaRichiesta + quintaRichiesta2)
+/* document.getElementById("somma").append (primaRichiesta + secondaRichiesta + terzaRichiesta + quartaRichiesta + quintaRichiesta) */
+
+/* CICLO FOR */
+
+for(i = 0; i < somma; i++){
+}
+
+document.getElementById("somma").append(i);
