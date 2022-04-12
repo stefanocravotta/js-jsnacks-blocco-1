@@ -8,9 +8,11 @@ const primaParola = prompt("Inserisci una parola")
 const secondaParola = prompt("Inserisci un altra parola")
 
 if(primaParola.length < secondaParola.length){
-    document.getElementById("parola-corta").append(primaParola);
-    document.getElementById("parola-lunga").append(secondaParola);
-}else{
-    document.getElementById("parola-corta").append(secondaParola);
-    document.getElementById("parola-lunga").append(primaParola);
+    document.getElementById("parola-corta").append(`La parola più corta è ${primaParola}`);
+    document.getElementById("parola-lunga").append(`La parola più lunga è ${secondaParola}`);
+}else if (primaParola.length > secondaParola.length){
+    document.getElementById("parola-lunga").append(`La parola più lunga è ${secondaParola}`);
+    document.getElementById("parola-corta").append(`La parola più corta è ${primaParola}`);
+}else if(primaParola.length === secondaParola.length){
+    document.getElementById("parola-corta").append("Le due parole hanno la stessa lunghezza");
 }
