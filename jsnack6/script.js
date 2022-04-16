@@ -7,5 +7,5 @@ const numeroUtente = parseInt(prompt("Inserisci un numero"));
 
 for(i = 0; i <= numeroUtente; i++){
     
-    document.getElementById("cubo").append(` ${i ** 2} `)
+    document.getElementById("cubo").append(` ${i*i*i} `);
 }
