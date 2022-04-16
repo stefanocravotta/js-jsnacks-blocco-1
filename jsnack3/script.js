@@ -10,19 +10,25 @@ const iterazione = 5;
 
 /* CICLO FOR */
 
-for(i = 0; i < 5; i++){
-    
+/* for(i = 0; i < iterazione; i++){
+
     somma += parseInt(prompt("Inserisci un numero cinque volte"))
 }
 
-document.getElementById("somma").append(somma);
+document.getElementById("somma").append(somma); */
 
 /* CICLO WHILE */
 
-/* let i = 0;
+let contatore = 0;
 
-while(somma > i){
-    i++
+while(iterazione > contatore){
+    let richiesta = parseInt(prompt("Inserisci un numero cinque volte"));
+    contatore++;
+    if(!isNaN(richiesta)){
+        somma += richiesta;
+    }else{
+        alert("inserisci un numero!!")
+    }
 }
 
-document.getElementById("somma").append(i) */
+document.getElementById("somma").append(somma)
