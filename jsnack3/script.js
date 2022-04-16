@@ -5,28 +5,24 @@
  Esegui questo programma in due versioni, con il for e con il while (facoltativo)
 */
 
-const primaRichiesta = parseInt(prompt("Inserisci un numero"));
-const secondaRichiesta = parseInt(prompt("Inserisci un numero"));
-const terzaRichiesta = parseInt(prompt("Inserisci un numero"));
-const quartaRichiesta = parseInt(prompt("Inserisci un numero"));
-const quintaRichiesta = parseInt(prompt("Inserisci un numero"));
-const somma = primaRichiesta + secondaRichiesta + terzaRichiesta + quartaRichiesta + quintaRichiesta;
-
-/* document.getElementById("somma").append (primaRichiesta + secondaRichiesta + terzaRichiesta + quartaRichiesta + quintaRichiesta) */
+let somma = 0;
+const iterazione = 5;
 
 /* CICLO FOR */
 
-/* for(i = 0; i < somma; i++){
+for(i = 0; i < 5; i++){
+    
+    somma += parseInt(prompt("Inserisci un numero cinque volte"))
 }
 
-document.getElementById("somma").append(i); */
+document.getElementById("somma").append(somma);
 
 /* CICLO WHILE */
 
-let i = 0;
+/* let i = 0;
 
 while(somma > i){
     i++
 }
 
-document.getElementById("somma").append(i)
+document.getElementById("somma").append(i) */
