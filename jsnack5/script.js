@@ -6,32 +6,16 @@
 */
 
 const arrayDispari = [];
+const iterazione = 6;
+let contatore = 0;
+let richiesta;
 
-const primaRichiesta = parseInt(prompt("Inserisci un numero"));
-const secondaRichiesta = parseInt(prompt("Inserisci un numero"));
-const terzaRichiesta = parseInt(prompt("Inserisci un numero"));
-const quartaRichiesta = parseInt(prompt("Inserisci un numero"));
-const quintaRichiesta = parseInt(prompt("Inserisci un numero"));
-const sestaRichiesta = parseInt(prompt("Inserisci un numero"));
-
-
-if(primaRichiesta % 2 !==0){
-    arrayDispari.push(primaRichiesta);
-}
-if(secondaRichiesta % 2 !==0){
-    arrayDispari.push(secondaRichiesta);
-}
-if(terzaRichiesta % 2 !==0){
-    arrayDispari.push(terzaRichiesta);
-}
-if(quartaRichiesta % 2 !==0){
-    arrayDispari.push(quartaRichiesta);
-}
-if(quintaRichiesta % 2 !==0){
-    arrayDispari.push(quintaRichiesta);
-}
-if(sestaRichiesta % 2 !==0){
-    arrayDispari.push(sestaRichiesta);;
+while(contatore < iterazione){
+    contatore++;
+    richiesta = parseInt(prompt("Inserisci un numero per 6 volte"))
+    if(richiesta % 2 !== 0){
+        arrayDispari.push(richiesta);
+    }
 }
 
 console.log(arrayDispari);
